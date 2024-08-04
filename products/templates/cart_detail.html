@@ -1,0 +1,5 @@
+# cart_detail.html (template)
+{% for item in cart.cartitem_set.all %}
+    {{ item.product.name }} - {{ item.quantity }} - {{ item.product.price }}
+{% endfor %}
+Total: {{ cart.total_price }}

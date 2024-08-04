@@ -1,0 +1,4 @@
+# product_detail.html (template)
+{% for image in product.productimage_set.all %}
+    <img src="{{ image.image.url }}" alt="{{ product.name }}">
+{% endfor %}

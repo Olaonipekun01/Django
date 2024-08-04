@@ -1,0 +1,11 @@
+<form action="{% url 'checkout' %}" method="post">
+    <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="{{ stripe_pub_key }}"
+        data-amount="5000"
+        data-name="Django Shop"
+        data-description="A Django shop example"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto">
+    </script>
+</form>

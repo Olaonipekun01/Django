@@ -21,6 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-^7llnyl(pcb2io7ehq+ik^jtdofr28%j74xzd_q@77vl#@ccsz'
+STRIPE_SECRET_KEY = 'Any'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'adeplpdjangoapp',
     'members',
+    'products',
 ]
 
 MIDDLEWARE = [
